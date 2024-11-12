@@ -1,23 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS fájl -->
+    <link rel="stylesheet" href="./css/style.css">
     <title>Bejelentkezési oldal</title>
+    <!-- Bootstrap CSS fájl -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <form>
-        <div class="container">
-            <label>Felhasználónév: </label>
-            <input type="text" placeholder="Írd be a felhasználóneved" name="username" required>
-            <label>Jelszó: </label>   
-            <input type="password" placeholder="Enter Password" name="password" required>  
-            <button type="submit">Bejelentkezés</button>   
-            <input type="checkbox" checked="checked"> Emlékezz rám   
-            <button type="button" class="cancelbtn"> Mégse</button>   
-            Elfelejtette <a href="#"> a jelszavát? </a>   
+<body class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center min-vh-100 align-items-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-4">
+                    <h3 class="text-center mb-4">Bejelentkezés</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Felhasználónév</label>
+                            <input type="text" class="form-control" id="username" placeholder="Írd be a felhasználóneved" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Jelszó</label>
+                            <input type="password" class="form-control" id="password" placeholder="Írd be a jelszavad" name="password" required>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="remember" checked>
+                            <label class="form-check-label" for="remember">Emlékezz rám</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Bejelentkezés</button>
+                        <button type="button" class="btn btn-secondary btn-block mt-2">Mégse</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#">Elfelejtette a jelszavát?</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </form>
+    </div>
+
+    <!-- Bootstrap javascript fájlok -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

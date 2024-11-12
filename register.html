@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regisztráció oldal</title>
+    <title>Regisztrációs oldal</title>
+    <!-- Bootstrap CSS fájlok -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
     <div class="container">
-        <h2>Regisztráció</h2>
-        <form action="#">
-          <div class="input-box">
-            <input type="text" placeholder="Írja be a nevét" required>
-          </div>
-          <div class="input-box">
-            <input type="text" placeholder="Írja be email címét" required>
-          </div>
-          <div class="input-box">
-            <input type="password" placeholder="Írja be jelszavát" required>
-          </div>
-          <div class="input-box">
-            <input type="password" placeholder="Írja be jelszavát mégegyszer" required>
-          </div>
-          <div class="policy">
-            <input type="checkbox">
-            <h3>Elfogadok mindent</h3>
-          </div>
-          <div class="input-box button">
-            <input type="Submit" value="Register Now">
-          </div>
-          <div class="text">
-            <h3>Van fiókja? <a href="./login.html">Jelentkezzen be most</a></h3>
-          </div>
-        </form>
-      </div>
+        <div class="row justify-content-center min-vh-100 align-items-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-4">
+                    <h2 class="text-center mb-4">Regisztráció</h2>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">Név</label>
+                            <input type="text" class="form-control" id="name" placeholder="Írja be a nevét" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email cím</label>
+                            <input type="email" class="form-control" id="email" placeholder="Írja be email címét" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Jelszó</label>
+                            <input type="password" class="form-control" id="password" placeholder="Írja be jelszavát" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Jelszó ismétlés</label>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Írja be jelszavát mégegyszer" required>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="acceptPolicy" required>
+                            <label class="form-check-label" for="acceptPolicy">Elfogadom a feltételeket</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Regisztrálás</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <h5>Van fiókja? <a href="./login.html">Jelentkezzen be most</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap javascript fájlok -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
