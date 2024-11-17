@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Regisztrációs oldal</title>
     <!-- Bootstrap CSS fájlok -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
+    <div class="navbaregy">
+        <div class="brand">Regisztráció</div>
+        <nav>
+            <a href="./index.html">Főoldal</a>
+            <a href="./login.html">Bejelentkezés</a>
+        </nav>
+    </div>
     <div class="container">
         <div class="row justify-content-center min-vh-100 align-items-center">
             <div class="col-12 col-md-6 col-lg-4">
@@ -32,10 +40,10 @@
                             <input type="password" class="form-control" id="confirmPassword" placeholder="Írja be jelszavát mégegyszer" required>
                         </div>
                         <div class="form-check mb-3">
-                            <input type="checkbox" class="form-check-input" id="acceptPolicy" required>
+                            <input type="checkbox" class="doboz" id="acceptPolicy" required>
                             <label class="form-check-label" for="acceptPolicy">Elfogadom a feltételeket</label>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Regisztrálás</button>
+                        <button type="submit" class="btn btn-danger btn-block">Regisztrálás</button>
                     </form>
                     <div class="text-center mt-3">
                         <h5>Van fiókja? <a href="./login.html">Jelentkezzen be most</a></h5>
@@ -46,8 +54,6 @@
     </div>
 
     <!-- Bootstrap javascript fájlok -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

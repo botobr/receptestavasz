@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
+    background-image: url('../Kepek/fooldalbg.png');
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
     color: #333;
@@ -12,7 +14,7 @@ body {
 
 
 .navbar {
-    background-color: #ff5722;
+    background-color: #222020;
     color: white;
     padding: 1em 2em;
     display: flex;
@@ -41,14 +43,13 @@ body {
 .search-bar input {
     padding: 0.75em;
     width: 60%;
-    border: 2px solid #ff5722;
-    border-radius: 25px;
+    border: 2px solid #363636;
     outline: none;
     transition: 0.3s;
 }
 .search-bar input:focus {
-    border-color: #e64a19;
-    box-shadow: 0 0 10px rgba(230, 74, 25, 0.5);
+    border-color: #000000;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 
 
@@ -73,10 +74,13 @@ body {
 .card img {
     max-width: 100%;
     height: auto;
+    margin: auto;
+    float: right;
 }
 .card h3 {
+    text-align: center;
     margin: 1em 0 0.5em;
-    color: #ff5722;
+    color: #363636;
     font-size: 1.25em;
 }
 .card p {

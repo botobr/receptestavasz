@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Bejelentkezési oldal</title>
     <!-- Bootstrap CSS fájl -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
+    <div class="navbaregy">
+        <div class="brand">Bejelentkezés</div>
+        <nav>
+            <a href="./index.html">Főoldal</a>
+            <a href="./register.html">Regisztráció</a>
+        </nav>
+    </div>
     <div class="container">
         <div class="row justify-content-center min-vh-100 align-items-center">
             <div class="col-12 col-md-6 col-lg-4">
@@ -26,10 +33,10 @@
                             <input type="password" class="form-control" id="password" placeholder="Írd be a jelszavad" name="password" required>
                         </div>
                         <div class="form-check mb-3">
-                            <input type="checkbox" class="form-check-input" id="remember" checked>
+                            <input type="checkbox" class="doboz" id="remember" checked>
                             <label class="form-check-label" for="remember">Emlékezz rám</label>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Bejelentkezés</button>
+                        <button type="submit" class="btn btn-danger btn-block">Bejelentkezés</button>
                         <button type="button" class="btn btn-secondary btn-block mt-2">Mégse</button>
                     </form>
                     <div class="text-center mt-3">
@@ -41,8 +48,7 @@
     </div>
 
     <!-- Bootstrap javascript fájlok -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

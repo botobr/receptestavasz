@@ -1,8 +1,31 @@
 body {
-    background-image: url(../Kepek/hatter.png);
+    background-image: url('../Kepek/hatter.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    line-height: 1.6;
+}
+
+.navbaregy {
+    background-color: #222020;
+    color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbaregy a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+}
+.navbaregy a:hover {
+    text-decoration: underline;
+}
+.navbaregy .brand {
+    font-size: 1.5em;
 }
 
 .jelszo {
@@ -37,7 +60,7 @@ div.card {
 }
 
 input[type="email"]:focus, input[type=""]:focus {
-    border-color: #ff0000; /* Piros szegély szín */
+    border-color: #ff0000;
     box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
 
 }
