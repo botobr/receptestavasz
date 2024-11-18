@@ -1,98 +1,111 @@
+/* Az összes elem alapértelmezett margójának és paddingjának eltávolítása, és a box-sizing beállítása border-box-ra, hogy a padding és border ne növelje az elem teljes méretét */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Minden elem margója nullázva */
+    padding: 0; /* Minden elem belső margója nullázva */
+    box-sizing: border-box; /* A box-sizing beállítása, hogy a padding és border ne növelje az elem teljes méretét */
 }
 
+/* Alapértelmezett stílusok a body tagra */
 body {
-    background-image: url('../Kepek/fooldalbg.png');
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
+    background-image: url('../Kepek/fooldalbg.png'); /* A háttérkép beállítása a főoldalhoz */
+    font-family: 'Arial', sans-serif; /* A betűtípus beállítása Arial-ra, ha elérhető, különben sans-serif */
+    background-color: #f8f9fa; /* Világos szürke háttérszín, ha a háttérkép nem töltődik be */
+    color: #333; /* A szövegek színe sötétszürke */
+    line-height: 1.6; /* A sorok közötti távolság beállítása, hogy a szöveg könnyen olvasható legyen */
 }
 
-
+/* Navigációs sáv stílusa */
 .navbar {
-    background-color: #222020;
-    color: white;
-    padding: 1em 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #222020; /* A navigációs sáv sötét háttérszíne */
+    color: white; /* A szöveg színe fehér */
+    padding: 1em 2em; /* A navigációs sáv belső margója */
+    display: flex; /* Flexbox elrendezés használata */
+    justify-content: space-between; /* A tartalom széthúzása a sáv két oldalára */
+    align-items: center; /* Vertikális középre igazítás */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Enyhe árnyék a navigációs sáv alatt */
 }
+
+/* Linkek stílusai a navigációs sávban */
 .navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1em;
-    font-weight: bold;
+    color: white; /* A linkek színe fehér */
+    text-decoration: none; /* Az aláhúzás eltávolítása a linkekről */
+    margin: 0 1em; /* A linkek közötti margó */
+    font-weight: bold; /* A linkek félkövérek */
 }
+
+/* Hover effektus a navigációs linkeknél */
 .navbar a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Aláhúzás, amikor az egér föléjük megy */
 }
+
+/* A navigációs sáv "brand" része (pl. az oldal neve) */
 .navbar .brand {
-    font-size: 1.5em;
+    font-size: 1.5em; /* A "brand" szöveg nagyobb, mint a normál szöveg */
 }
 
-
+/* Kereső sáv stílusa */
 .search-bar {
-    margin: 2em 0;
-    text-align: center;
+    margin: 2em 0; /* Felső és alsó margó beállítása */
+    text-align: center; /* A kereső sáv középre igazítása */
 }
+
+/* Keresőmező (input) stílusa */
 .search-bar input {
-    padding: 0.75em;
-    width: 60%;
-    border: 2px solid #363636;
-    outline: none;
-    transition: 0.3s;
+    padding: 0.75em; /* A keresőmező belső margója */
+    width: 60%; /* A keresőmező szélessége 60% */
+    border: 2px solid #363636; /* Szürke szegély */
+    outline: none; /* A fókuszáláskor megjelenő outline eltávolítása */
+    transition: 0.3s; /* Átmenet a szegély és árnyék változásához */
 }
+
+/* Keresőmező fókuszálásakor történő stílusváltozás */
 .search-bar input:focus {
-    border-color: #000000;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    border-color: #000000; /* A szegély színe fekete lesz */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Vörös árnyék jelenik meg a keresőmező körül */
 }
 
-
+/* Receptek tartalmának elrendezése grid alapú elrendezéssel */
 .recipes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5em;
-    padding: 2em;
+    display: grid; /* Grid elrendezés használata */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatikusan alkalmazkodik az ablak méretéhez, minimum 300px széles oszlopokkal */
+    gap: 1.5em; /* A kártyák közötti távolság */
+    padding: 2em; /* A grid körüli belső margó */
 }
+
+/* Kártyák stílusai */
 .card {
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: white; /* A kártyák háttérszíne fehér */
+    border: none; /* A kártyák szegélyének eltávolítása */
+    border-radius: 10px; /* A kártyák sarkainak lekerekítése */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enyhe árnyék a kártyák körül */
+    overflow: hidden; /* A kártyán belüli elemek nem léphetik túl a kártya határait */
+    transition: transform 0.3s, box-shadow 0.3s; /* Átmeneti változás a kártya mozgásakor és árnyékakor */
 }
+
+/* Hover effektus a kártyákra */
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); /* A kártya enyhén elmozdul felfelé, amikor az egér fölé megy */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Erősebb árnyék a kártya körül */
 }
+
+/* Kép stílusa a kártyákban */
 .card img {
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-    float: right;
+    max-width: 100%; /* A képek maximális szélessége 100%, hogy kitöltsék a kártya szélességét */
+    height: auto; /* A képek magassága automatikusan arányosan változik */
+    margin: auto; /* Kép középre igazítása */
+    float: right; /* A kép jobbra úszik */
 }
+
+/* Címek stílusa a kártyákban */
 .card h3 {
-    text-align: center;
-    margin: 1em 0 0.5em;
-    color: #363636;
-    font-size: 1.25em;
+    text-align: center; /* A cím középre igazítása */
+    margin: 1em 0 0.5em; /* Felső és alsó margó beállítása */
+    color: #363636; /* A cím színe sötétszürke */
+    font-size: 1.25em; /* A cím betűméretének beállítása */
 }
+
+/* A kártyák szövege */
 .card p {
-    padding: 0 1em 1em;
-    color: #555;
-}
-
-
-footer {
-    background-color: #ff5722;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    margin-top: 2em;
+    padding: 0 1em 1em; /* A szöveg belső margója */
+    color: #555; /* A szöveg színe világos szürke */
 }

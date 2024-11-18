@@ -1,76 +1,91 @@
+/* Az oldal háttérképe */
 body {
-    background-image: url('../Kepek/hatter.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    line-height: 1.6;
+    background-image: url('../Kepek/hatter.png'); /* A háttérképet az adott elérési úton lévő fájlból tölti be */
+    background-repeat: no-repeat; /* A háttérkép nem ismétlődik */
+    background-position: center; /* A háttérkép középre van igazítva */
+    background-size: cover; /* A háttérkép kitölti az egész képernyőt, miközben megőrzi az arányait */
+    line-height: 1.6; /* A szövegek közötti sorok közötti távolság */
 }
 
+/* Navigációs sáv */
 .navbaregy {
-    background-color: #222020;
-    color: white;
-    padding: 1em 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #222020; /* Sötét háttérszín a navigációs sávnak */
+    color: white; /* A szöveg fehér */
+    padding: 1em 2em; /* A navigációs sáv belső margója */
+    display: flex; /* Flexbox elrendezés használata */
+    justify-content: space-between; /* A tartalom elhelyezése bal és jobb oldalra */
+    align-items: center; /* A tartalom vertikálisan középre igazítása */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Enyhe árnyék a navigációs sáv alatt */
 }
+
+/* Linkek a navigációs sávban */
 .navbaregy a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1em;
-    font-weight: bold;
+    color: white; /* A linkek színe fehér */
+    text-decoration: none; /* A linkek aláhúzása eltávolítva */
+    margin: 0 1em; /* A linkek között horizontálisan 1em távolság */
+    font-weight: bold; /* A linkek szövege félkövér */
 }
+
+/* Hover effektus a navigációs sáv linkeken */
 .navbaregy a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Linkek aláhúzása, amikor az egér föléjük megy */
 }
+
+/* A navigációs sáv "brand" szövege */
 .navbaregy .brand {
-    font-size: 1.5em;
+    font-size: 1.5em; /* A "brand" szöveg nagyobb, mint a normál szöveg */
 }
 
+/* Jelszó mező figyelmeztetése (piros szín) */
 .jelszo {
-    color: red;
-    
-} 
+    color: red; /* A jelszó szöveg pirosra van állítva */
+}
 
+/* Hover effektus a jelszó szövegre */
 .jelszo:hover {
-    color: rgb(179, 1, 1);
-} 
+    color: rgb(179, 1, 1); /* A jelszó színe sötétebb pirosra változik, amikor az egér fölé megy */
+}
 
+/* Checkbox stílus */
 .doboz {
-    margin-left: -15px;
+    margin-left: -15px; /* A checkbox bal oldali margója */
 }
 
+/* Checkbox kifejezett színbeállítás */
 input[type="checkbox"].doboz {
-    accent-color: red; 
+    accent-color: red; /* A checkbox színe pirosra van állítva */
 }
 
+/* Fókusz állapot a szöveg- és jelszómezőkben */
 input[type="text"]:focus, input[type="password"]:focus {
-    border-color: #ff0000; 
-    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25); 
+    border-color: #ff0000; /* A mezők szegélye pirosra változik, amikor fókuszálunk rájuk */
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25); /* Enyhe árnyék a mező körül, amikor fókuszálunk */
 }
 
+/* Minden input mező fókusz állapotban */
 input:focus {
-    border-color: #ff0000;
-    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+    border-color: #ff0000; /* Minden típusú input mező piros szegélyt kap, ha fókuszban van */
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25); /* Enyhe árnyék minden input mező körül, ha fókuszálunk rá */
 }
 
+/* Kártya stílus */
 div.card {
-    background-color: antiquewhite; 
+    background-color: antiquewhite; /* A kártyák háttérszíne világos homokbarna */
 }
 
+/* Email mező fókusz állapota */
 input[type="email"]:focus, input[type=""]:focus {
-    border-color: #ff0000;
-    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
-
+    border-color: #ff0000; /* A mezők szegélye pirosra változik, ha fókuszálunk rájuk */
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25); /* Enyhe árnyék a mezők körül */
 }
 
-
+/* Linkek középen (pl. a "Jelentkezzen be most" link) */
 .text-center a {
-    color: red; 
-    text-decoration: none; 
+    color: red; /* A linkek színe piros */
+    text-decoration: none; /* Az aláhúzás eltávolítása */
 }
 
+/* Hover effektus a középre igazított linkeken */
 .text-center a:hover {
-    color: rgb(179, 1, 1); 
+    color: rgb(179, 1, 1); /* A link színe sötétebb pirosra változik, amikor az egér fölé megy */
 }

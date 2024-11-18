@@ -1,59 +1,57 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="hu"> <!-- Az oldal nyelve magyar -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Regisztrációs oldal</title>
-    <!-- Bootstrap CSS fájlok -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8"> <!-- Az oldal karakterkódolása UTF-8, hogy támogassa a magyar karaktereket -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Internet Explorer kompatibilitás beállítása -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Reszponzív beállítás a mobil eszközökhez -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Egyéni CSS fájl hozzáadása a stílusokhoz -->
+    <title>Regisztrációs oldal</title> <!-- Az oldal címe, ami a böngésző fülén jelenik meg -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS fájl hozzáadása, hogy gyorsan formázhassuk az oldalt -->
 </head>
-<body class="bg-light">
-    <div class="navbaregy">
-        <div class="brand">Regisztráció</div>
-        <nav>
-            <a href="./index.html">Főoldal</a>
-            <a href="./login.html">Bejelentkezés</a>
+<body class="bg-light"> <!-- Az oldal háttérszínét világos színűre állítja -->
+    <div class="navbaregy"> <!-- Navigációs sáv kezdete -->
+        <div class="brand">Regisztráció</div> <!-- Az oldal neve, itt "Regisztráció" -->
+        <nav> <!-- Navigációs linkek -->
+            <a href="./index.html">Főoldal</a> <!-- Link a főoldalra -->
+            <a href="./login.html">Bejelentkezés</a> <!-- Link a bejelentkezési oldalra -->
         </nav>
     </div>
-    <div class="container">
-        <div class="row justify-content-center min-vh-100 align-items-center">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card p-4">
-                    <h2 class="text-center mb-4">Regisztráció</h2>
-                    <form action="#">
-                        <div class="form-group">
-                            <label for="name">Név</label>
-                            <input type="text" class="form-control" id="name" placeholder="Írja be a nevét" required>
+    <div class="container"> <!-- Központi tartalom konténer -->
+        <div class="row justify-content-center min-vh-100 align-items-center"> <!-- Középre igazítja a formot a képernyőn -->
+            <div class="col-12 col-md-6 col-lg-4"> <!-- Az űrlap szélességét állítja be különböző képernyőméretekhez -->
+                <div class="card p-4"> <!-- Kártya, ami körbeveszi a regisztrációs formot -->
+                    <h2 class="text-center mb-4">Regisztráció</h2> <!-- Cím a regisztrációs form tetején -->
+                    <form action="#"> <!-- Űrlap kezdete -->
+                        <div class="form-group"> <!-- Név mező -->
+                            <label for="name">Név</label> <!-- Név mező címkéje -->
+                            <input type="text" class="form-control" id="name" placeholder="Írja be a nevét" required> <!-- Név mező, kötelező kitöltés -->
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email cím</label>
-                            <input type="email" class="form-control" id="email" placeholder="Írja be email címét" required>
+                        <div class="form-group"> <!-- Email mező -->
+                            <label for="email">Email cím</label> <!-- Email mező címkéje -->
+                            <input type="email" class="form-control" id="email" placeholder="Írja be email címét" required> <!-- Email mező, kötelező kitöltés -->
                         </div>
-                        <div class="form-group">
-                            <label for="password">Jelszó</label>
-                            <input type="password" class="form-control" id="password" placeholder="Írja be jelszavát" required>
+                        <div class="form-group"> <!-- Jelszó mező -->
+                            <label for="password">Jelszó</label> <!-- Jelszó mező címkéje -->
+                            <input type="password" class="form-control" id="password" placeholder="Írja be jelszavát" required> <!-- Jelszó mező, titkosított input -->
                         </div>
-                        <div class="form-group">
-                            <label for="confirmPassword">Jelszó ismétlés</label>
-                            <input type="password" class="form-control" id="confirmPassword" placeholder="Írja be jelszavát mégegyszer" required>
+                        <div class="form-group"> <!-- Jelszó ismétlés mező -->
+                            <label for="confirmPassword">Jelszó ismétlés</label> <!-- Jelszó ismétlés mező címkéje -->
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Írja be jelszavát mégegyszer" required> <!-- Jelszó ismétlés mező -->
                         </div>
-                        <div class="form-check mb-3">
-                            <input type="checkbox" class="doboz" id="acceptPolicy" required>
-                            <label class="form-check-label" for="acceptPolicy">Elfogadom a feltételeket</label>
+                        <div class="form-check mb-3"> <!-- Elfogadom a feltételek checkbox -->
+                            <input type="checkbox" class="doboz" id="acceptPolicy" required> <!-- Checkbox a feltételek elfogadásához, kötelező -->
+                            <label class="form-check-label" for="acceptPolicy">Elfogadom a feltételeket</label> <!-- Checkbox címkéje -->
                         </div>
-                        <button type="submit" class="btn btn-danger btn-block">Regisztrálás</button>
+                        <button type="submit" class="btn btn-danger btn-block">Regisztrálás</button> <!-- Regisztrálás gomb, piros színű, teljes szélesség -->
                     </form>
-                    <div class="text-center mt-3">
-                        <h5>Van fiókja? <a href="./login.html">Jelentkezzen be most</a></h5>
+                    <div class="text-center mt-3"> <!-- Az alábbi link középre igazítva -->
+                        <h5>Van fiókja? <a href="./login.html">Jelentkezzen be most</a></h5> <!-- Link a bejelentkezési oldalra, ha már van fiók -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap javascript fájlok -->
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript fájl, szükséges a Bootstrap funkciókhoz -->
 </body>
 </html>

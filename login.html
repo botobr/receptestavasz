@@ -1,54 +1,51 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="hu"> <!-- Az oldal nyelve magyar -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS fájl -->
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Bejelentkezési oldal</title>
-    <!-- Bootstrap CSS fájl -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8"> <!-- Az oldal karakterkódolása UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Internet Explorer kompatibilitás beállítása -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Reszponzív megjelenés beállítása (mobilon is jól nézzen ki) -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Egyéni CSS fájl hozzáadása -->
+    <title>Bejelentkezési oldal</title> <!-- Az oldal címe, ami a böngésző fülén jelenik meg -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS fájl hozzáadása, hogy könnyen formázhassuk az oldalt -->
 </head>
-<body class="bg-light">
-    <div class="navbaregy">
-        <div class="brand">Bejelentkezés</div>
-        <nav>
-            <a href="./index.html">Főoldal</a>
-            <a href="./register.html">Regisztráció</a>
+<body class="bg-light"> <!-- A body háttérszínét világos színre állítja -->
+    <div class="navbaregy"> <!-- Navigációs sáv kezdete -->
+        <div class="brand">Bejelentkezés</div> <!-- Az oldal neve, itt a "Bejelentkezés" szöveggel -->
+        <nav> <!-- Navigációs linkek -->
+            <a href="./index.html">Főoldal</a> <!-- Link a főoldalra -->
+            <a href="./register.html">Regisztráció</a> <!-- Link a regisztrációs oldalra -->
         </nav>
     </div>
-    <div class="container">
-        <div class="row justify-content-center min-vh-100 align-items-center">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card p-4">
-                    <h3 class="text-center mb-4">Bejelentkezés</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="username">Felhasználónév</label>
-                            <input type="text" class="form-control" id="username" placeholder="Írd be a felhasználóneved" name="username" required>
+
+    <div class="container"> <!-- Központi tartalom konténer -->
+        <div class="row justify-content-center min-vh-100 align-items-center"> <!-- Középre igazítja a bejelentkezési formot -->
+            <div class="col-12 col-md-6 col-lg-4"> <!-- A form szélességét állítja be a különböző képernyőméretekhez -->
+                <div class="card p-4"> <!-- Kártya, ami körbeveszi a bejelentkezési formot -->
+                    <h3 class="text-center mb-4">Bejelentkezés</h3> <!-- Cím a bejelentkezési form tetején -->
+                    <form> <!-- Form elem kezdete -->
+                        <div class="form-group"> <!-- Form elem egyes mezője -->
+                            <label for="username">Felhasználónév</label> <!-- A felhasználónév mező címkéje -->
+                            <input type="text" class="form-control" id="username" placeholder="Írd be a felhasználóneved" name="username" required> <!-- Felhasználónév mező, kötelező kitöltés -->
                         </div>
-                        <div class="form-group">
-                            <label for="password">Jelszó</label>
-                            <input type="password" class="form-control" id="password" placeholder="Írd be a jelszavad" name="password" required>
+                        <div class="form-group"> <!-- Jelszó mező -->
+                            <label for="password">Jelszó</label> <!-- Jelszó mező címkéje -->
+                            <input type="password" class="form-control" id="password" placeholder="Írd be a jelszavad" name="password" required> <!-- Jelszó mező, titkosított input -->
                         </div>
-                        <div class="form-check mb-3">
-                            <input type="checkbox" class="doboz" id="remember" checked>
-                            <label class="form-check-label" for="remember">Emlékezz rám</label>
+                        <div class="form-check mb-3"> <!-- Emlékezzen rám checkbox -->
+                            <input type="checkbox" class="doboz" id="remember" checked> <!-- Checkbox alapértelmezett bejelöléssel -->
+                            <label class="form-check-label" for="remember">Emlékezz rám</label> <!-- Checkbox címkéje -->
                         </div>
-                        <button type="submit" class="btn btn-danger btn-block">Bejelentkezés</button>
-                        <button type="button" class="btn btn-secondary btn-block mt-2">Mégse</button>
+                        <button type="submit" class="btn btn-danger btn-block">Bejelentkezés</button> <!-- Bejelentkezés gomb, piros színű, teljes szélesség -->
+                        <button type="button" class="btn btn-secondary btn-block mt-2">Mégse</button> <!-- Mégse gomb, szürke, teljes szélesség, 2 px margóval -->
                     </form>
-                    <div class="text-center mt-3">
-                        <a href="#">Elfelejtette a jelszavát?</a>
+                    <div class="text-center mt-3"> <!-- Elfelejtette a jelszavát link középre igazítva -->
+                        <a href="#">Elfelejtette a jelszavát?</a> <!-- Link a jelszó visszaállításához -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap javascript fájlok -->
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript fájl -->
 </body>
 </html>
